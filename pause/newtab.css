@@ -1,0 +1,45 @@
+:root {
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body {
+  background: #ffffff;
+  color: #0a0a0a;
+  font-family: var(--mono);
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sprite-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 36px;
+  margin-bottom: 16px;
+}
+.title {
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a0a0a;
+  line-height: 1.25;
+  margin-bottom: 4px;
+  letter-spacing: -0.005em;
+}
+.sub {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 400;
+  color: #6b6a5d;
+  line-height: 1.45;
+}
